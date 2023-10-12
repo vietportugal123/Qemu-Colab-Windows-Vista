@@ -4,7 +4,7 @@ sudo apt install qemu-system-x86-xen -y
 sudo apt install qemu-system-x86 -y
 qemu-img create -f raw Win.img 64G
 wget -O RTL8139F.iso 'https://drive.google.com/uc?export=download&id=1wDL8vo9mmYKw1HKXZzaYHoKmzSt_wXai'
-wget -O Win.iso 'https://dl.bobpony.com/windows/vista/en_windows_vista_with_sp2_x86_dvd_342266.iso'
+wget -O Win.iso 'https://archive.org/download/windows-vista-lite-en-us/Windows%20Vista%20Lite%20%28en-us%29.iso'
 
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 sudo qemu-system-x86_64 \
